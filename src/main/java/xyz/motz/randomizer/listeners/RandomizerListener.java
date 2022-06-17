@@ -13,6 +13,7 @@ public class RandomizerListener implements Listener {
 
     @EventHandler
     public void onBlockBreak(BlockBreakEvent e) {
+        if(e.isCancelled()) return;
         if (Randomizer.isActivated()) {
             e.setDropItems(false);
             e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(),
