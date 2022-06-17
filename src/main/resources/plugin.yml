@@ -1,5 +1,5 @@
 name: Randomizer
-main: xyz.motz.randomizer.main.Randomizer
+main: xyz.motz.randomizer.Randomizer
 author: motz0815
 version: @version@
 api-version: @apiVersion@
